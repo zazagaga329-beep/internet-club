@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Современный игровой компьютерный клуб с киберпанк атмосферой,电竞 зонами, турнирами и комфортными игровыми местами."
+    />
+    <title>NeonArc Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="bg-orb orb-one"></div>
+      <div class="bg-orb orb-two"></div>
+      <div class="bg-grid"></div>
+
+      <header class="site-header">
+        <nav class="navbar container">
+          <a href="#home" class="brand" aria-label="NeonArc Club">
+            <span class="brand-mark">N</span>
+            <span>NeonArc</span>
+          </a>
+
+          <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-panel">
+            <ul class="nav-links">
+              <li><a href="#home">Главная</a></li>
+              <li><a href="#zones">Игровые зоны</a></li>
+              <li><a href="#prices">Прайс</a></li>
+              <li><a href="#gallery">Галерея</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <a href="#booking" class="button button-primary nav-cta">Забронировать</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home" class="hero section">
+          <div class="container hero-inner">
+            <div class="hero-copy reveal">
+              <div class="eyebrow">Игровой клуб нового поколения</div>
+              <h1>
+                Играй в <span>максимальном</span> темпе.
+              </h1>
+              <p>
+                NeonArc — это не просто компьютерный клуб, а пространство для тех,
+                кто любит погружение в игры, мощный железный парк и уютную атмосферу
+                без компромиссов. Здесь можно комфортно провести вечер, провести
+                турнир, поработать на мощной станции и просто зарядиться эмоциями.
+              </p>
+              <p class="hero-note">
+                Мы собрали современные игровые ПК, низкую задержку, стильный интерьер,
+                качественный звук и отдельные зоны для игры, стрима и отдыха — чтобы
+                каждый визит ощущался как событие.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#booking" class="button button-primary">Забронировать</a>
+                <a href="#prices" class="button button-secondary">Цены</a>
+              </div>
+
+              <ul class="hero-stats">
+                <li>
+                  <strong>24/7</strong>
+                  <span>Доступ</span>
+                </li>
+                <li>
+                  <strong>28</strong>
+                  <span>ПК</span>
+                </li>
+                <li>
+                  <strong>12+</strong>
+                  <span>Турниров</span>
+                </li>
+              </ul>
+
+              <div class="feature-strip" aria-label="Преимущества клуба">
+                <span>RTX 4080</span>
+                <span>240 Гц</span>
+                <span>4K Lounge</span>
+                <span>VIP зоны</span>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal">
+              <div class="monitor-card glass-panel">
+                <div class="monitor-header">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="screen-scene">
+                  <div class="scanlines"></div>
+                  <div class="screen-overlay">
+                    <div class="mini-card">
+                      <span class="label">Производительность</span>
+                      <strong>RTX 4080</strong>
+                    </div>
+                    <div class="mini-card accent">
+                      <span class="label">Скорость</span>
+                      <strong>240 FPS</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="floating-badge badge-one glass-panel">#1 arena</div>
+              <div class="floating-badge badge-two glass-panel">PS5 lounge</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="zones" class="section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="eyebrow">Игровые зоны</span>
+              <h2>Комфорт и мощь в каждом уголке</h2>
+            </div>
+
+            <div class="zone-chooser glass-panel reveal">
+              <div class="zone-tabs" aria-label="Выбор игровой зоны">
+                <button class="zone-tab is-active" type="button" data-zone="arena">
+                  <span class="tab-mark">🎮</span>
+                  <span>
+                    <strong>Esports Arena</strong>
+                    <small>для турниров</small>
+                  </span>
+                </button>
+                <button class="zone-tab" type="button" data-zone="console">
+                  <span class="tab-mark">🕹️</span>
+                  <span>
+                    <strong>Console Lounge</strong>
+                    <small>для вечеров</small>
+                  </span>
+                </button>
+                <button class="zone-tab" type="button" data-zone="studio">
+                  <span class="tab-mark">🧠</span>
+                  <span>
+                    <strong>Creative Lab</strong>
+                    <small>для стрима</small>
+                  </span>
+                </button>
+              </div>
+
+              <div class="zone-showcase">
+                <div class="zone-media">
+                  <img
+                    id="zone-main-image"
+                    src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80"
+                    alt="Esports Arena"
+                  />
+                  <div id="zone-thumbs" class="zone-thumbs" aria-label="Фотографии зоны"></div>
+                </div>
+
+                <div class="zone-details">
+                  <div class="zone-detail-badge">Выбранная зона</div>
+                  <h3 id="zone-name">Esports Arena</h3>
+                  <p id="zone-description">
+                    Премиальная зона для соревновательной игры: мощные ПК, быстрые мониторы,
+                    профессиональная периферия и стабильный интернет для CS2, Valorant,
+                    Dota 2, Apex и любого другого тайтла с высоким уровнем конкуренции.
+                  </p>
+
+                  <div class="zone-specs-block">
+                    <span>Характеристики ПК</span>
+                    <ul id="zone-specs" class="zone-spec-list"></ul>
+                  </div>
+
+                  <div class="zone-price-row">
+                    <span>От</span>
+                    <strong id="zone-price">399 ₽ / час</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="prices" class="section prices-section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="eyebrow">Прайс</span>
+              <h2>Гибкие тарифы под любой ритм</h2>
+            </div>
+
+            <div class="pricing-grid">
+              <article class="price-card glass-panel reveal">
+                <div class="plan-label">Старт</div>
+                <h3>1 час</h3>
+                <div class="price">199 ₽</div>
+                <p class="price-note">Идеально для короткой игровой сессии или быстрой проверки условия.</p>
+                <ul>
+                  <li>1 игровая станция</li>
+                  <li>Высокоскоростной интернет</li>
+                  <li>Базовая периферия</li>
+                </ul>
+                <a href="#booking" class="button button-secondary full-width">Выбрать</a>
+              </article>
+
+              <article class="price-card featured glass-panel reveal">
+                <div class="plan-label">Популярный</div>
+                <h3>4 часа</h3>
+                <div class="price">699 ₽</div>
+                <p class="price-note">Лучший формат для вечерних матчей, командных игр и комфортного времяпрепровождения.</p>
+                <ul>
+                  <li>Доступ к всей зоне</li>
+                  <li>VIP-поддержка</li>
+                  <li>Приоритетное бронирование</li>
+                </ul>
+                <a href="#booking" class="button button-primary full-width">Забронировать</a>
+              </article>
+
+              <article class="price-card glass-panel reveal">
+                <div class="plan-label">Постоянный</div>
+                <h3>Абонемент</h3>
+                <div class="price">2990 ₽</div>
+                <p class="price-note">Подходит для регулярных игроков, стримеров и тех, кто живёт в ритме игр.</p>
+                <ul>
+                  <li>Месячный доступ</li>
+                  <li>Подарочный кофе</li>
+                  <li>Участие в турнирах</li>
+                </ul>
+                <a href="#booking" class="button button-secondary full-width">Подробнее</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="gallery" class="section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="eyebrow">Галерея</span>
+              <h2>Атмосфера настоящей игровой вселенной</h2>
+            </div>
+
+            <div class="gallery-grid">
+              <figure class="gallery-item reveal tall">
+                <img
+                  src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80"
+                  alt="Игровой клуб с современным оборудованием"
+                />
+              </figure>
+              <figure class="gallery-item reveal">
+                <img
+                  src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80"
+                  alt="Игровой ПК и RGB подсветка"
+                />
+              </figure>
+              <figure class="gallery-item reveal">
+                <img
+                  src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80"
+                  alt="Турнирная игровая зона"
+                />
+              </figure>
+              <figure class="gallery-item reveal wide">
+                <img
+                  src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1200&q=80"
+                  alt="Лаунж зона компьютерного клуба"
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacts" class="section contact-section">
+          <div class="container contact-wrap">
+            <div class="contact-copy reveal">
+              <span class="eyebrow">Контакты</span>
+              <h2>Собираемся в цифровом пространстве</h2>
+              <p>
+                Приходите за новой порцией адреналина, турниров и отличного настроения.
+                Мы всегда готовы помочь подобрать идеальный слот под ваш график, подстроить
+                пространство под вечер с друзьями или организовать игровую встречу для команды.
+              </p>
+              <p>
+                NeonArc создан для тех, кто хочет жить рядом с играми, комфортом и быстрым
+                темпом жизни. Здесь нет скучных рабочих кабинетов и шаблонных сетевых залов —
+                только тёплая атмосфера, мощная техника и энергия настоящего киберпространства.
+              </p>
+
+              <ul class="contact-list">
+                <li>📍 Москва, ул. Пролетарская, 42</li>
+                <li>📞 +7 (999) 123-45-67</li>
+                <li>✉️ hello@neonarc.club</li>
+                <li>🕘 24/7 · по предварительной записи</li>
+              </ul>
+            </div>
+
+            <form class="contact-form glass-panel reveal" id="booking">
+              <h3>Бронирование</h3>
+              <div class="field-row">
+                <label>
+                  <span>Имя</span>
+                  <input type="text" placeholder="Ваше имя" />
+                </label>
+              </div>
+              <div class="field-row two-col">
+                <label>
+                  <span>Телефон</span>
+                  <input type="tel" placeholder="+7 ..." />
+                </label>
+                <label>
+                  <span>Дата</span>
+                  <input type="date" />
+                </label>
+              </div>
+              <div class="field-row">
+                <label>
+                  <span>Сообщение</span>
+                  <textarea rows="4" placeholder="Опишите пожелания"></textarea>
+                </label>
+              </div>
+              <button type="submit" class="button button-primary full-width">
+                Забронировать место
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div class="brand-footer">
+            <a href="#home" class="brand" aria-label="NeonArc Club">
+              <span class="brand-mark">N</span>
+              <span>NeonArc</span>
+            </a>
+            <p>Игровая вселенная для любителей скорости, командной игры и технологий.</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="#zones">Игровые зоны</a>
+            <a href="#prices">Прайс</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#contacts">Контакты</a>
+          </div>
+
+          <div class="footer-socials">
+            <a href="#" aria-label="Discord">Discord</a>
+            <a href="#" aria-label="Telegram">Telegram</a>
+            <a href="#" aria-label="VK">VK</a>
+          </div>
+        </div>
+        <div class="container footer-bottom">
+          <span>© 2026 NeonArc Club</span>
+          <span>Все права защищены</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
